@@ -1,0 +1,23 @@
+.footer {
+  height: 12rem;
+  background-color: rgba(72, 141, 245, 0.781);
+  color: white;
+}
+.ftleft {
+  height: 100%;
+  float: left;
+  width: 40%;
+  position: relative;
+  text-align: center;
+}
+.ftleft p {
+  font-size: 48px;
+  margin: 0;
+  color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.ftmiddle {
+  height: 100%;
+  float: left;
+  width: 60%;
+}
