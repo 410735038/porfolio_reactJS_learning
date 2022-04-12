@@ -138,6 +138,11 @@
   margin: 10px 0 0 0;
 }
 
+.resume-sub-heading a{
+  color: #007bff;
+  font-size: 14px;
+}
+
 .resume-heading-description {
   font-size: 12px;
   text-align: justify;

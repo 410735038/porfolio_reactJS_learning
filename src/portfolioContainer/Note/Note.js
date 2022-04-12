@@ -17,28 +17,6 @@ export default function Note(props) {
   const fadeInSubscription =
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
-  const options = {
-    loop: true,
-    margin: 50,
-    nav: true,
-    animateIn: "bounceInRight",
-    animateOut: "bounceOutRight",
-    dots: true,
-    autoplay: true,
-    smartSpeed: 1000,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      768: {
-        items: 2,
-      },
-      1000: {
-        items: 3,
-      },
-    },
-  };
-
   useEffect(() => {
     return () => {
       /* UNSUBSCRIBE THE SUBSCRIPTIONS */
@@ -77,19 +55,13 @@ export default function Note(props) {
       toDate: "present",
     },
   ];
-  useEffect(() => {
-    return () => {
-      /* UNSUBSCRIBE THE SUBSCRIPTIONS */
-      fadeInSubscription.unsubscribe();
-    };
-  }, [fadeInSubscription]);
   return (
-    <div>
+    <div className="fade-in" id={props.id || ""}>
       <ScreenHeading
         title={"Note"}
         subHeading={"What I had writing in my college"}
       />
-      <section id="test" className="testimonial-section fade-in" id={props.id || ""}>
+      <section className="testimonial-section">
         <div className="container">
           <div className="row">
             {cardDetails.map((cardDetails, index) => (
