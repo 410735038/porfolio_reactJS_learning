@@ -16,7 +16,7 @@ export default function NoteCard(props) {
         <p>
           {props.cdbPara}
         </p>
-        <a href={props.rdmLink}>Link</a>
+        <a style={{color:"blue"}} target="_blank" href={props.rdmLink}>Link</a>
       </div>
       <div className="card-footer">
         <p>{props.fromDate}-{props.toDate}</p>

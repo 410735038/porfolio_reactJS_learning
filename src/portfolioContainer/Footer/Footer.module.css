@@ -21,3 +21,12 @@
   float: left;
   width: 60%;
 }
+
+@media (max-width: 400px) {
+  .footer{
+    height: 14rem;
+  }
+  .ftleft p{
+    font-size: 36px;
+  }
+}
